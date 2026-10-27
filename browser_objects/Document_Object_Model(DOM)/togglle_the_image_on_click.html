@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="myImage" src="./images/cute-lion-nature.avif" alt="Image" style="width: 300px; height: 200px;">
+    <button id="toggleButton">Toggle Image</button>
+
+    <script>
+        var isImage1 = true;
+        document.getElementById("toggleButton").onclick = function() {
+            var img = document.getElementById("myImage");
+            if (isImage1) {
+                img.src = "./images/cute-lion-nature.avif";
+            } else {
+                img.src = "./images/lion_image.jpeg";
+            }
+            isImage1 = !isImage1;
+        };
+    </script>
+</body>
+</html>

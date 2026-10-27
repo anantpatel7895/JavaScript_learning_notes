@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document.getElementsByClassName Example</title>
+</head>
+<body>
+  <div class="example">Example 1</div>
+  <div class="example">Example 2</div>
+  <div class="example">Example 3</div>
+  <div class="anant">Not an example</div>
+
+  <script>
+    // Get all elements with the class name "example"
+    var elements = document.getElementsByClassName("example");
+    console.log(elements); // This will log an HTMLCollection of the elements
+    console.log(typeof elements); // This will log "object" since HTMLCollection is an object
+    // Loop through the elements and log their text content
+    for (var i = 0; i < elements.length; i++) {
+      console.log(elements[i].textContent);
+    }
+  </script>
+</body>
+</html>

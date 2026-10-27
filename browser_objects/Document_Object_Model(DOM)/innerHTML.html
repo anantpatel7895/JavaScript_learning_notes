@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="anant">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Quam maxime tempora recusandae, laboriosam illo ex repellendus odit eaque corrupti debitis fuga 
+        reprehenderit at sint a in, dolores tempore ad voluptatibus.</div>
+
+    <script>
+
+        setTimeout(function(){
+            document.querySelector(".anant").style.color = "red";
+        }, 10000)
+        // Get the element with the class name "anant"
+        var element = document.getElementsByClassName("anant")[0]; // Get the first element with the class "anant"
+        console.log(element.innerHTML); // This will log the HTML content of the element
+        // Change the innerHTML of the element
+        element.innerHTML = "This is the new content of the div.";
+    </script>
+</body>
+</html>
